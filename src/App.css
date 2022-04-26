@@ -1,33 +1,34 @@
-.App {
-  text-align: center;
+.navbar {
+    background-color: #3500D3;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:hover {
+    color: #fff;
+    transform: scale(.98);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thead {
+    background-color: #3500D3;
+    color: #fff;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #3500D3;
+}
+
+.btn-primary:hover {
+    background-color: #3500D3;
+    transform: scale(1.01);
 }

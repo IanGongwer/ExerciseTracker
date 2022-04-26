@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import '../app.css';
 
 export default class CreateExercise extends Component {
   constructor(props) {
@@ -86,7 +87,7 @@ export default class CreateExercise extends Component {
       <h3>Create New Exercise Log</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
-          <label>Username: </label>
+          <label>Name: </label>
           <select ref="userInput"
               required
               className="form-control"
@@ -105,7 +106,6 @@ export default class CreateExercise extends Component {
         <div className="form-group"> 
           <label>Description: </label>
           <input  type="text"
-              required
               className="form-control"
               value={this.state.description}
               onChange={this.onChangeDescription}
@@ -115,6 +115,7 @@ export default class CreateExercise extends Component {
           <label>Duration (in minutes): </label>
           <input 
               type="text" 
+              required
               className="form-control"
               value={this.state.duration}
               onChange={this.onChangeDuration}
